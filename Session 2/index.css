@@ -1,0 +1,165 @@
+/*
+ selectors{
+    property: value;
+    property: value;
+} 
+*/
+
+
+/* Selectors */
+
+/* Tags */ 
+/* div p img a */
+/* div{
+    color:rgba(38, 161, 147, 0.792);
+} */
+
+/* Id */
+/* div1 div2 */
+
+/* #div1{
+    color:red;
+}
+
+#div2{
+    color:blue;
+} */
+
+/* Class */
+/* div-container */
+
+/* .div-container1{
+    color:red;
+}
+
+.div-container2{
+    color:blue;
+} */
+
+
+
+/* Domination */
+/*     
+
+Inline CSS > Inteternal CSS > External CSS
+
+*/
+
+ 
+
+/* Properties */
+/* #div1{
+    color: red;
+    font-size: 20px; */
+    /* font-size: 50%; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+} */
+
+
+/* BOX MODEL */
+/* Padding */
+/* Border */
+/* Margin */
+
+#div1{
+    padding: 20px;
+    /* border-color: black;
+    border-width: 5px;
+    border-style: solid; */
+    border: 5px solid black;
+    margin: 20px;
+}
+
+
+/* Transition & transform */
+#div1{
+    transition: all 0s ease-in-out;
+}
+
+#div1:hover{
+    background-color: red;
+    transform: rotate(360deg);
+}
+
+
+/* Animation */
+@keyframes myAni{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+#div1{
+    animation:myAni 5s ease-in-out 0;
+}
+
+
+
+/* Flexbox & Grid*/ 
+#flex-container{
+    height: 100vh;
+    display: flex;
+    /* Horizonatal */
+    justify-content: space-evenly;
+    /* vertical */
+    align-items: center;
+    flex-direction: row;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Grid */
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid-item{
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* Media Query */
+
+/* Small Devices Phones */
+@media screen and (max-width: 600px){
+    #div1{
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px){
+    #div1{
+        background-color: yellow;
+    }
+}
+
