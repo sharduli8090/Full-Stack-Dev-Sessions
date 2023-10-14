@@ -1,0 +1,12 @@
+{
+  "name": "session-7",
+  "version": "1.0.0",
+  "description": "this is sample node folder",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sharduli",
+  "license": "ISC"
+}
